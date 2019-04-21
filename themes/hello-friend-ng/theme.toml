@@ -6,11 +6,6 @@ tags = ["blog", "clean", "customizable", "dark", "highlighting", "light", "minim
 features = ["blog", "shortcode", "syntax highlighting"]
 min_version = 0.30
 
-[author]
-  name = "Dudu Twizer"
-  homepage = "https://dudutwizer.com"
-  twitter = "https://twitter.com/dudutwizer"
-
 [original]
   name = "hello-friend"
   homepage = "https://github.com/panr/hugo-theme-hello-friend"
