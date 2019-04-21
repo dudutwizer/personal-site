@@ -2,3 +2,39 @@ baseURL = "http://dudutwizer.com/"
 languageCode = "en-us"
 title = "Dudu Twizer"
 theme = "hello-friend-ng"
+sectionPagesMenu = "main"
+pygmentsCodeFences = true
+
+[outputs]
+home = [ "HTML", "AMP", "RSS", "JSON"]
+page = [ "HTML", "AMP"]
+
+[params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  showVisitedLinks = true
+  disableSearch = false
+  disableAssetsBusting = false
+  disableLanguageSwitchingButton = true
+  disableShortcutsTitle = false
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false
