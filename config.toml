@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://dudutwizer.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Dudu Twizer"
 theme = "hello-friend-ng"
