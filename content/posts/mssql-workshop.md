@@ -1,7 +1,7 @@
 ---
 title: "MSSQL Workshop"
 date: 2019-04-21T22:33:33+03:00
-draft: true
+draft: false
 tags: ["Cloud", "AWS", MicrosoftOnAWS]
 categories: ["cloud"]
 ---
