@@ -1,0 +1,37 @@
+
+<div class="post-warp">
+	<div class="intro">
+    {{ $cdn_url := .Scratch.Get "cdn_url" }}
+    {{ with .Site.Params.avatar}}
+    {{ $avatar := .}}
+    <div class="avatar">
+        <a href="/"> <img src="{{ (printf "%s%s" $cdn_url $avatar)}}"> </a>
+    </div>
+    {{ end }}
+    {{ with .Site.Params.subtitle}}
+    <h2 class="description">
+       {{ . }}
+    </h2>
+		{{ end }}
+		<div class="social-links">
+      {{ partial "social.html" . }}
+		</div>
+</div>
+	{{ range (.Paginate .Pages).Pages }}
+	<div class="post-tags">
+		{{ with .Params.tags }}
+				<section>
+				<i class="iconfont icon-tag"></i>Tags: 
+				{{ range . }}
+				<span class="tag"><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">
+								#{{.}}</a></span>
+				{{ end }}
+				</section>
+		{{ end }}
+</div>
+
+
+	{{ end }}
+
+	{{ partial "paginator.html" . }}
+</div>

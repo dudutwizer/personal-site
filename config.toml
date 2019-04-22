@@ -1,78 +1,60 @@
-baseURL                   = "https://www.dudutwizer.com"
-builddrafts                = false
-languageCode               = "zn-Hans"
-canonifyurls               = true
-contentdir                 = "content"
-layoutdir                  = "layouts"
-publishdir                 = "public"
-enableEmoji                = true
-hasCJKLanguage             = true
-summaryLength              = 200
-Paginate                   = 3
+baseURL = "https://www.dudutwizer.com"
+languageCode = "en-us"
+title = "Dudu Twizer's Site"
+theme = "LeaveIt"
 
-theme                      = "AllinOne"
-title                      = "Dudu Twizer"
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
 
-pygmentsuseclasses         = true
+preserveTaxonomyNames = true
 
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
 
-[permalinks]
-  blog                     = "blog/:year-:month/:slug/"
-
-
-[taxonomies]
-  tag                      = "tags"
-  series                   = "series"
-  category                 = "categories"
-
+[Permalinks]
+ posts = "/:year/:filename/"
 
 [menu]
   [[menu.main]]
-    name                   = "Posts"
-    weight                 = -120
-    identifier             = "post"
-    url                    = "posts/"  
+    name = "All posts"
+    url = "/posts/"
+    weight = 1
 
   [[menu.main]]
-    name                   = "About"
-    weight                 = -100
-    identifier             = "about"
-    url                    = "about/"  
+    name = "Posts by category"
+    url = "/categories/"
+    weight = 2
 
- 
+  [[menu.main]]
+    name = "Posts by tags"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
 
 [params]
-  faviconfile              = "img/zheng.png"               # from static/
-  avatar                   = "img/profile.jpg"             # path to image in static dir e.g img/avatar.png 
-  author                   = "Dudu Twizer"
-  description              = [""]           # appears in the site header when set to a non-empty string
-  welcome_head             = "Hello, World!"
-  welcome_word             = "~ No Day But Today ~"
+    since = 2019
+    author = "Dudu Twizer"                           # Author's name
+    avatar = "/images/me/profile.png"           # Author's avatar
+    subtitle = "Dudu (David) Twizer"         # Subtitle
+    cdn_url = ""           # Base CDN URL
+    home_mode = "post" # post or other
+    google_verification = ""
+    description = "Welcome to my site" # site description
+    keywords = "Dudu,Twizer, Dudutwizer" # site keywords
+    beian = ""
+    baiduAnalytics = ""
 
-  latestpostscount         = 5                             # how many posts to display on the home page
-  bloggroupby              = 'month'
-  dateform                 = "Jan 2, 2006"
-  dateformfull             = "2006-01-02  Monday  15:04:05"
-  noshowreadtime           = false                         # if true, don't show "<x> minutes read" in posts
+[params.social]
+    GitHub = "dudutwizer"
+    Twitter = "dudutwizer"
+    Email   = "dudutwizer@icloud.com"
+    Facebook = "dudutwizerr"
 
-  # slides
-  slidesDirPath            = "themes/AllinOne/static/img/header-slides"    # path to image in local dir (path for hugo)
-  slidesDirPathURL         = "img/header-slides"    # path to image in static dir (for static pages)
-
-  # highlighting 
-  highlightjs              = true
-
-  # latex
-  katex                    = true
-
-  # links
-  email                    = "dudutwizer@icloud.com"
-  github                   = "//github.com/dudutwizer"
-  linkedin                 = "//linkedin.com/in/dudutwizer"
-  facebook                 = "//facebook.com/dudutwizerr"
-  include_rss              = false                          # include RSS <link> tag in <head> and show RSS icon
-  
-  # analytics
-  googleAnalytics          = "your-google-analytic-id"
-    
-    
